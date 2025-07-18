@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Tombol Email Mengambang -->
+    <button id="floating-email" class="btn btn-custom position-fixed" style="bottom: 30px; right: 30px; z-index: 9999;">
+         hersafaiz.a@gmail.com 
+         <i class="fas fa-copy ms-2" style="cursor:pointer;" title="Salin Email"></i>
+    </button>
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container text-center">
@@ -23,10 +28,9 @@
                 I'm adaptable and able to work both individually and as part of a team.
             </p>
             <div class="mt-4">
-                <a href="https://www.linkedin.com/in/hersafaizaulia" class="btn btn-custom btn-lg"><i class="fas fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.linkedin.com/in/hersafaizaulia" class="btn btn-custom btn-lg"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/faizman0" class="btn btn-custom btn-lg"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" class="btn btn-custom btn-lg"><i class="fas fa-envelope"></i> Email</a>
-                <a href="#" class="btn btn-custom btn-lg"><i class="fas fa-file-pdf"></i> CV</a>
+                
             </div>
         </div>
     </section>
@@ -43,9 +47,9 @@
                             <i class="fas fa-graduation-cap fa-3x text-primary"></i>
                         </div>
                         <div>
-                            <h4 class="mb-1">Yogyakarta University of Technology </h4>
-                            <p class="mb-1 text-muted">Information Systems  | 2022 - 2025</p>
-                            <p class="mb-0">Fokus pada pengembangan sistem informasi dan pemrograman web/mobile.</p>
+                            <h4 class="mb-1">Yogyakarta University of Technology</h4>
+                            <p class="mb-1 text-muted">Information Systems | 2022 - 2025</p>
+                            <p class="mb-0">Focused on information systems development and web/mobile programming.</p>
                         </div>
                     </div>
                 </div>
@@ -59,21 +63,21 @@
                 <div class="timeline-item">
                     <h4 class="mb-2">Fullstack Developer</h4>
                     <p class="text-muted mb-2"><strong>Apr 2025 - Jul 2025</strong></p>
-                    <p>Mengembangkan sistem informasi perpustakaan berbasis web untuk memudahkan operasional staf perpustakaan SDN Banguntapan.</p>
+                    <p>Developed a web-based library information system to streamline the operations of SDN Banguntapan library staff.</p>
                     <ul>
-                        <li>Mengimplementasikan fitur peminjaman dan pengembalian buku</li>
-                        <li>Membuat sistem pelaporan otomatis</li>
-                        <li>Mengoptimalkan performa database</li>
+                        <li>Implemented book borrowing and returning features</li>
+                        <li>Created an automated reporting system</li>
+                        <li>Optimized database performance</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
                     <h4 class="mb-2">Fullstack Developer</h4>
                     <p class="text-muted mb-2"><strong>Jul 2025 - Aug 2025</strong></p>
-                    <p>Mengembangkan aplikasi kasir kafe offline berbasis mobile untuk efisiensi transaksi dan laporan keuangan.</p>
+                    <p>Developed an offline mobile-based cafe cashier application to improve transaction efficiency and financial reporting.</p>
                     <ul>
-                        <li>Membuat antarmuka kasir yang user-friendly</li>
-                        <li>Mengimplementasikan sistem database offline</li>
-                        <li>Membuat fitur laporan harian/mingguan/bulanan</li>
+                        <li>Created a user-friendly cashier interface</li>
+                        <li>Implemented an offline database system</li>
+                        <li>Developed daily/weekly/monthly report features</li>
                     </ul>
                 </div>
             </div>
@@ -81,56 +85,39 @@
 
         <!-- Portofolio -->
         <section class="section" id="portofolio">
-            <h2 class="section-title">Portofolio</h2>
+            <h2 class="section-title">Portfolio</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card h-100">
-                        <img src="img/image.png" class="portfolio-img card-img-top" alt="Website Perpustakaan">
+                        <img src="img/image.png" class="portfolio-img card-img-top" alt="Library Website">
                         <div class="card-body">
-                            <h5 class="card-title">Website Manajemen Perpustakaan</h5>
-                            <p class="card-text">Sistem informasi perpustakaan berbasis web untuk SDN Banguntapan dengan fitur lengkap manajemen koleksi buku dan anggota.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Library Management Website</h5>
+                            <p class="card-text">A web-based library information system for SDN Banguntapan, featuring comprehensive management of book collections and members.</p>
+                            <div class="d-flex gap-2 py-2 px-1">
                                 <span class="badge bg-primary">Laravel</span>
                                 <span class="badge bg-secondary">MySQL</span>
                                 <span class="badge bg-success">Bootstrap</span>
                             </div>
                         </div>
                         <div class="card-footer bg-white border-top-0">
-                            <a href="https://perpustakaan.sdnbanguntapan.my.id/" class="btn btn-custom w-100" target="_blank">Lihat Proyek</a>
+                            <a href="https://perpustakaan.sdnbanguntapan.my.id/" class="btn btn-custom w-100" target="_blank">Show Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card h-100">
-                        <img src="https://source.unsplash.com/600x400/?cafe,coffee" class="portfolio-img card-img-top" alt="Aplikasi Kasir Kafe">
+                        <img src="https://source.unsplash.com/600x400/?cafe,coffee" class="portfolio-img card-img-top" alt="Cafe POS App">
                         <div class="card-body">
-                            <h5 class="card-title">Aplikasi Kasir Kafe Offline</h5>
-                            <p class="card-text">Aplikasi mobile kasir untuk memudahkan transaksi dan laporan keuangan kafe dengan sistem offline-first.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Offline Cafe POS Application</h5>
+                            <p class="card-text">A mobile cashier application to simplify transactions and financial reporting for cafes, with an offline-first system.</p>
+                            <div class="d-flex gap-2 py-2 px-1">
                                 <span class="badge bg-primary">Flutter</span>
                                 <span class="badge bg-secondary">SQLite</span>
                                 <span class="badge bg-success">Dart</span>
                             </div>
                         </div>
                         <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-custom w-100 disabled">Demo Tidak Tersedia</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://source.unsplash.com/600x400/?mobile,app" class="portfolio-img card-img-top" alt="Aplikasi Lainnya">
-                        <div class="card-body">
-                            <h5 class="card-title">Aplikasi Lainnya</h5>
-                            <p class="card-text">Berbagai aplikasi web dan mobile lain yang pernah dikembangkan dengan berbagai teknologi stack.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="badge bg-primary">Java</span>
-                                <span class="badge bg-secondary">Firebase</span>
-                                <span class="badge bg-success">API</span>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-custom w-100 disabled">Demo Tidak Tersedia</a>
+                            <a href="#" class="btn btn-custom w-100 disabled">Demo Not Available</a>
                         </div>
                     </div>
                 </div>
@@ -138,18 +125,36 @@
         </section>
     </div>
 
-    <footer class="text-center py-4">
+    <footer class="py-4">
         <div class="container">
-            <div class="mb-3">
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 text-start">&copy; copyright 2025 by Hersa Faiz Aulia</p>
+                <span class="text-end" style="font-size: 0.95em;">Last update: Jul 2025</span>
             </div>
-            <p class="mb-0">&copy; {{ date('Y') }} Hersa Faiz Aulia. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('floating-email').addEventListener('click', function() {
+        const email = 'hersa.faiz.aulia@email.com'; // Ganti dengan email Anda
+        navigator.clipboard.writeText(email).then(function() {
+          // Tampilkan notifikasi kecil
+          let notif = document.createElement('div');
+          notif.innerText = 'Email berhasil disalin!';
+          notif.style.position = 'fixed';
+          notif.style.bottom = '80px';
+          notif.style.right = '30px';
+          notif.style.background = 'var(--secondary-color)';
+          notif.style.color = 'white';
+          notif.style.padding = '10px 20px';
+          notif.style.borderRadius = '20px';
+          notif.style.boxShadow = '0 2px 8px rgba(44,62,80,0.15)';
+          notif.style.zIndex = '10000';
+          document.body.appendChild(notif);
+          setTimeout(() => notif.remove(), 1500);
+        });
+      });
+    </script>
 </body>
 </html>

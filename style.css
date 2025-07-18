@@ -26,7 +26,6 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
@@ -105,7 +104,7 @@ body {
 
 /* Portfolio Cards */
 .portfolio-img {
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-bottom: 1px solid #eee;
 }
@@ -138,6 +137,29 @@ footer {
     color: white;
     padding: 2rem 0;
     margin-top: 3rem;
+}
+
+/* Floating Email Button */
+#floating-email {
+    box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#floating-email:active {
+    background-color: var(--accent-color);
+    color: white;
+}
+@media (max-width: 768px) {
+    #floating-email {
+        right: 10px;
+        bottom: 10px;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
