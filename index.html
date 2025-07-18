@@ -141,15 +141,15 @@
         navigator.clipboard.writeText(email).then(function() {
           // Tampilkan notifikasi kecil
           let notif = document.createElement('div');
-          notif.innerText = 'Email berhasil disalin!';
+          notif.innerText = 'Email copied successfully!';
           notif.style.position = 'fixed';
           notif.style.bottom = '80px';
           notif.style.right = '30px';
-          notif.style.background = 'var(--secondary-color)';
+          notif.style.background = 'var(--primary-color)';
           notif.style.color = 'white';
           notif.style.padding = '10px 20px';
           notif.style.borderRadius = '20px';
-          notif.style.boxShadow = '0 2px 8px rgba(44,62,80,0.15)';
+          notif.style.boxShadow = '0';
           notif.style.zIndex = '10000';
           document.body.appendChild(notif);
           setTimeout(() => notif.remove(), 1500);

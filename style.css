@@ -149,9 +149,14 @@ footer {
     align-items: center;
     gap: 0.5rem;
 }
-#floating-email:active {
-    background-color: var(--accent-color);
-    color: white;
+#floating-email {
+    background-color:var(--secondary-color); /* biru transparan */
+    color:  white;
+}
+
+#floating-email:hover {
+    background-color:  rgba(0, 123, 255, 0.15); /* biru solid saat hover */
+    color: var(--primary-color);
 }
 @media (max-width: 768px) {
     #floating-email {
