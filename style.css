@@ -120,6 +120,12 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+.rounded-icon {
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            width: 32px; /* Atur lebar sesuai kebutuhan */
+            height: 32px; /* Atur tinggi sesuai kebutuhan */
+        }
+
 .social-icon {
     font-size: 1.5rem;
     margin: 0 0.5rem;
